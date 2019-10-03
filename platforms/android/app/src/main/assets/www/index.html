@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <!--meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *"-->
+        <!--meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"-->
+
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+
+        <!-- Path to Framework7 Library Bundle CSS -->
+        <link rel="stylesheet" href="css/framework7.bundle.min.css">
+        <link rel="stylesheet" href="../../css/framework7-icons.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>Hello World</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+    </head>
+    <body>
+    <div id="app"><div class="view view-main view-init">
+        <div class="page"><div class="navbar">
+            <div class="navbar-inner">
+                <div class="left"></div>
+                <div class="title">Liste des achats</div>
+                <div class="right"></div>
+            </div>
+        </div>
+            <div class="page-content">
+
+                <div class="card data-table">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th class="label-cell">Article</th>
+                            <th class="numeric-cell">Quantité</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="label-cell">Pull</td>
+                            <td class="numeric-cell">10</td>
+
+                        </tr>
+                        <tr>
+                            <td class="label-cell">Robe</td>
+                            <td class="numeric-cell">1</td>
+
+                        </tr>
+                        <tr>
+                            <td class="label-cell">Machine à laver</td>
+                            <td class="numeric-cell">5</td>
+
+                        </tr>
+                        <tr>
+                            <td class="label-cell">chaussure</td>
+                            <td class="numeric-cell">305</td>
+
+                        </tr>
+                        <tr>
+                            <td class="label-cell">Mixeur</td>
+                            <td class="numeric-cell">305</td>
+
+                        </tr>
+                        <tr>
+                            <td class="label-cell">Pochette</td>
+                            <td class="numeric-cell">305</td>
+
+                        </tr>
+                        <tr>
+                            <td class="label-cell">Ecouteur</td>
+                            <td class="numeric-cell">305</td>
+
+                        </tr>
+                        <tr>
+                            <td class="label-cell">Tablette</td>
+                            <td class="numeric-cell">305</td>
+
+                        </tr>
+                        </tbody>
+        </table>
+            <div id="checkout"> <!--button id="buyButton" >Checkout</button-->
+
+                    <div class="block">
+                        <div class="row">
+                            <button class="col button button-fill" id="buyButton">Payer maintenant</button>
+                            <!--button class="col button button-fill">Button</button>
+                            <button class="col button button-fill button-round">Round</button-->
+                        </div>
+                    </div>
+            </div>
+        </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/framework7.bundle.min.js"></script><script>var theme = 'ios';
+if (location.href.indexOf('theme=md') >= 0) theme = 'md';
+if (location.href.indexOf('theme=aurora') >= 0) theme = 'aurora';
+var plugin = {
+  params: {
+    theme: theme,
+    root: '#app',
+  }
+};
+if (Framework7.use) Framework7.use(plugin);
+else if (Framework7.Class && Framework7.Class.use) Framework7.Class.use(plugin);
+</script><script>var app = new Framework7();</script></body>
+</html>
